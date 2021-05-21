@@ -1,0 +1,177 @@
+header.navbar{
+    position: sticky;
+    top: 0;
+}
+.navbar img{
+    height: 50px;
+    width: 50px;
+    margin: 8px;
+}
+.navbar{
+    display:  flex;
+    /* background: rgb(103 119 154); */
+}
+.navbar li{
+    list-style: none;
+    display: inline;
+}
+.navbar li a{
+    text-decoration: none;
+    padding: 10px;
+    color: #000;
+    font-size: 1.22rem;    
+}
+
+.navbar li a:hover{
+    color: #000;
+    border: 2px solid #fff;
+    background: #fff;
+    border-radius: 1em;
+}
+
+
+/* Content Management */
+
+#home{
+    height: 598px;
+}
+.content{
+    color:rgb(0, 0, 0);
+    display: flex;
+    gap: 1px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 1.54em; */
+}
+.content::before{
+    content: "";
+    background: url('/img/bg.jpg') no-repeat center center / cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 663px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.68;
+}
+/* #home{
+    margin: 10px 5px;
+    padding: -2em;
+} */
+.heading{
+    margin-top: 2.6em;
+    font-size: 2.5em;
+}
+.desc{
+    font-size: 1.1em;
+}
+.btn{
+    border: 2px solid green;
+    border-radius: 41px;
+    font-size: 1.1em;
+    padding: 0.5em;
+    cursor: pointer ;
+}
+.btn:hover{
+    background: #fff;
+}
+
+/* This is team section */
+.team-container{
+    /* border: 2px solid blue; */
+    text-align: center;
+}
+
+.team-container .profileImg{
+    height: 120px;
+    width: 120px;
+}
+.teamhead{
+    font-size: 2.5em;
+}
+#team{
+    display: flex;
+    gap: 10px;
+    align-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.team{
+    display: block;
+    width: 25em;
+    border: 2px solid tomato ;
+    border-radius: 10px;
+    padding: 1.3em;
+    background: rgb(231, 231, 231);
+    margin: 10px auto;
+}
+#team h3, p{
+    color: #000;
+}
+
+
+/*blogs are start from here*/
+
+.blog-container>h3{
+    color: #808DA0;
+    text-align: center;
+}
+#blog{
+    display: flex;
+    gap: 10px;
+    align-content: 10px;
+    justify-content: center;
+}
+.blog{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    text-align: center;
+    padding:2em;
+}
+.blog > p{
+    text-align: justify;
+}
+.blog:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.blog .bt{
+    float: left;
+    color: blue;
+    cursor: pointer;
+    padding: 0.8em;
+}
+
+/* input form styling */
+.contact > h3{
+    text-align: center;
+    color: #808DA0;
+}
+input, textarea{
+   width: 80%;
+   display: block;
+   padding: 10px;
+   margin: auto;
+
+}
+input[type=submit]{
+    width: 50%;
+    display: block;
+    background: #45A049;
+    padding: 1.1em;
+    margin: 1.2em auto;
+    border: 2px solid green;
+    border-radius: 2em;
+}
+
+
+.foot{
+    background: #000;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    height: 2em;
+}
